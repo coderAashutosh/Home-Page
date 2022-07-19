@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <img class="background-img" src="./background.png" alt="">
+        <h1 id="current-time">11:38:33</h1>
+        <div class="quotes">
+            <p>TODAY's QUOTE</p>
+            <h2>Time is what we want most, but what we use worst.</h2>
+        </div>
+    </div>
+
+    <script>
+        let time = document.querySelector('#current-time');
+
+
+        setInterval(() => {
+            let d = new Date();
+            time.innerHTML = d.toLocaleTimeString();
+        }, 1000);
+    </script>
+
+</body>
+
+</html>
